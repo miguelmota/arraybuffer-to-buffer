@@ -15,7 +15,7 @@ var ArrayBufferToBuffer = require('arraybuffer-to-buffer');
 
 var ab = new ArrayBuffer(12);
 var v = new DataView(ab);
-[].slice.call(str).forEach(function(s, i) {
+[].slice.call('abc').forEach(function(s, i) {
   v[i] = s.charCodeAt(0);
 });
 
