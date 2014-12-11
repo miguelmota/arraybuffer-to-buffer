@@ -1,0 +1,29 @@
+{
+  "name": "arraybuffer-to-buffer",
+  "version": "0.0.1",
+  "description": "Convert ArrayBuffer to Buffer",
+  "main": "arraybuffer-to-buffer.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miguelmota/arraybuffer-to-buffer"
+  },
+  "keywords": [
+    "buffer",
+    "array"
+  ],
+  "author": "Miguel Mota <hello@miguelmota.com> (http://www.miguelmota.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miguelmota/arraybuffer-to-buffer/issues"
+  },
+  "homepage": "https://github.com/miguelmota/arraybuffer-to-buffer",
+  "dependencies": {
+    "tape": "^3.0.3"
+  }
+}
