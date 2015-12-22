@@ -23,7 +23,7 @@
     "url": "https://github.com/miguelmota/arraybuffer-to-buffer/issues"
   },
   "homepage": "https://github.com/miguelmota/arraybuffer-to-buffer",
-  "dependencies": {
+  "devDependencies": {
     "tape": "^3.0.3"
   }
 }
