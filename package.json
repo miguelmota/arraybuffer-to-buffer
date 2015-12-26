@@ -1,6 +1,6 @@
 {
   "name": "arraybuffer-to-buffer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert ArrayBuffer to Buffer",
   "main": "arraybuffer-to-buffer.js",
   "directories": {

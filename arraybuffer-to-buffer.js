@@ -1,5 +1,5 @@
 (function(root) {
-  var isArrayBufferSupported = new Buffer(new Uint8Array([1]).buffer)[0] === 1;
+  var isArrayBufferSupported = (new Buffer(new Uint8Array([1]).buffer)[0] === 1);
 
   var ArrayBufferToBuffer = isArrayBufferSupported ? ArrayBufferToBufferAsArgument : ArrayBufferToBufferPerElement;
 
