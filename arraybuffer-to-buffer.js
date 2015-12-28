@@ -1,13 +1,13 @@
 (function(root) {
   var isArrayBufferSupported = (new Buffer(new Uint8Array([1]).buffer)[0] === 1);
 
-  var ArrayBufferToBuffer = isArrayBufferSupported ? ArrayBufferToBufferAsArgument : ArrayBufferToBufferPerElement;
+  var arrayBufferToBuffer = isArrayBufferSupported ? arrayBufferToBufferAsArgument : arrayBufferToBufferCycle;
 
-  function ArrayBufferToBufferAsArgument (ab) {
+  function arrayBufferToBufferAsArgument(ab) {
     return new Buffer(ab);
   }
 
-  function ArrayBufferToBufferPerElement (ab) {
+  function arrayBufferToBufferCycle(ab) {
     var buffer = new Buffer(ab.byteLength);
     var view = new Uint8Array(ab);
     for (var i = 0; i < buffer.length; ++i) {
@@ -18,15 +18,15 @@
 
   if (typeof exports !== 'undefined') {
     if (typeof module !== 'undefined' && module.exports) {
-      exports = module.exports = ArrayBufferToBuffer;
+      exports = module.exports = arrayBufferToBuffer;
     }
-    exports.ArrayBufferToBuffer = ArrayBufferToBuffer;
+    exports.arrayBufferToBuffer = arrayBufferToBuffer;
   } else if (typeof define === 'function' && define.amd) {
     define([], function() {
-      return ArrayBufferToBuffer;
+      return arrayBufferToBuffer;
     });
   } else {
-    root.ArrayBufferToBuffer = ArrayBufferToBuffer;
+    root.arrayBufferToBuffer = arrayBufferToBuffer;
   }
 
 })(this);

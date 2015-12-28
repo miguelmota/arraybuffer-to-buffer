@@ -1,5 +1,5 @@
 var test = require('tape');
-var ArrayBufferToBuffer = require('../arraybuffer-to-buffer');
+var arrayBufferToBuffer = require('../arraybuffer-to-buffer');
 
 function arrayBufferEqualBuffer(a, b) {
   for (var i = 0; i < a.length; i++) {
@@ -8,7 +8,7 @@ function arrayBufferEqualBuffer(a, b) {
   return true;
 }
 
-test('ArrayBufferToBuffer', function (t) {
+test('arrayBufferToBuffer', function (t) {
   t.plan(2);
 
   var str = 'abc';
@@ -19,7 +19,7 @@ test('ArrayBufferToBuffer', function (t) {
     v.setUint8(i, s.charCodeAt(0));
   });
 
-  var b = ArrayBufferToBuffer(ab);
+  var b = arrayBufferToBuffer(ab);
 
   t.strictEqual(arrayBufferEqualBuffer(ab, b), true);
   t.equal(b.toString('utf8', 0, 3), str);

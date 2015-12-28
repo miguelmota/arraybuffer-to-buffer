@@ -11,7 +11,7 @@ npm install arraybuffer-to-buffer
 # Usage
 
 ```javascript
-var ArrayBufferToBuffer = require('arraybuffer-to-buffer');
+var arrayBufferToBuffer = require('arraybuffer-to-buffer');
 
 var ab = new ArrayBuffer(12);
 var v = new DataView(ab);
@@ -19,7 +19,7 @@ var v = new DataView(ab);
   v[i] = s.charCodeAt(0);
 });
 
-var b = ArrayBufferToBuffer(ab);
+var b = arrayBufferToBuffer(ab);
 
 b.toString('utf8', 0, 3); // 'abc'
 ```
