@@ -1,6 +1,6 @@
 {
   "name": "arraybuffer-to-buffer",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Convert ArrayBuffer to Buffer",
   "main": "arraybuffer-to-buffer.js",
   "directories": {
@@ -17,13 +17,17 @@
     "buffer",
     "array"
   ],
-  "author": "Miguel Mota <hello@miguelmota.com> (http://www.miguelmota.com/)",
+  "author": {
+    "name": "Miguel Mota",
+    "email": "hello@miguelmota.com",
+    "url": "https://miguelmota.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/miguelmota/arraybuffer-to-buffer/issues"
   },
   "homepage": "https://github.com/miguelmota/arraybuffer-to-buffer",
   "devDependencies": {
-    "tape": "^3.0.3"
+    "tape": "^4.9.1"
   }
 }
